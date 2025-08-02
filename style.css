@@ -1,0 +1,112 @@
+/* style.css */
+
+:root {
+    --background-color: #f6f6ef; /* Hacker News-style off-white */
+    --container-bg: #ffffff;
+    --text-color: #000000;
+    --subtle-text-color: #777777;
+    --accent-color: #fd933c;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    padding: 30px 40px;
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    max-width: 240px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+main h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--subtle-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.security-note {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+.security-note strong {
+    color: var(--text-color);
+}
+
+.status {
+    margin-top: 2.5rem;
+}
+
+.status p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #ffac69; /* Lighter orange */
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--subtle-text-color);
+}
