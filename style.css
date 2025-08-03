@@ -1,16 +1,17 @@
 /* style.css */
 
 :root {
-    --background-color: #f6f6ef; /* Hacker News-style off-white */
-    --container-bg: #ffffff;
-    --text-color: #000000;
+    --background-color: #000000;
+    --container-bg: #111111;
+    --text-color: #ffffff;
     --subtle-text-color: #777777;
     --accent-color: #fd933c;
-    --border-color: #e0e0e0;
+    --border-color: #333333;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    /* Bahnschrift is the primary font, with fallbacks for systems that don't have it. */
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -39,39 +40,32 @@ header {
 }
 
 .logo {
-    max-width: 240px; /* Adjust as needed */
+    max-width: 300px; /* Adjust as needed */
     height: auto;
     margin-bottom: 15px;
 }
 
-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin: 0;
-}
-
 main h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 2rem;
 }
 
 main p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--subtle-text-color);
     margin-bottom: 1.5rem;
 }
 
 .security-note {
-    background-color: #fff;
+    background-color: #1a1a1a;
     border: 1px solid var(--border-color);
     padding: 15px;
     border-radius: 6px;
     text-align: left;
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-top: 2rem;
 }
 
@@ -84,14 +78,14 @@ main p {
 }
 
 .status p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-color);
 }
 
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: #000000;
     padding: 12px 28px;
     border-radius: 6px;
     text-decoration: none;
