@@ -99,6 +99,47 @@ main p {
     background-color: #ffac69; /* Lighter orange */
 }
 
+/* --- Founder Section Styles --- */
+.founder-section {
+    margin-top: 2rem; 
+    padding-top: 1rem; /* Reduced */
+    border-top: 1px solid var(--border-color);
+    text-align: left;
+    cursor: pointer;
+}
+
+.founder-section h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25rem; /* Reduced */
+    margin-bottom: 0; 
+}
+
+/* This creates the orange accent line */
+.founder-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.founder-bio {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out, margin-top 0.5s ease-out;
+}
+
+.founder-section:hover .founder-bio {
+    max-height: 500px; /* A value larger than the content's height */
+    opacity: 1;
+    margin-top: 1rem; /* Reduced */
+}
+
+
 footer {
     margin-top: 3rem;
     font-size: 0.9rem;
