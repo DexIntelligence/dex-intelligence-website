@@ -223,8 +223,13 @@ main p {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .two-column, .three-column {
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 1.5rem;
+        align-items: center;
+    }
+    
+    .benefits-section .three-column {
+        flex-direction: column !important;
     }
     
     .column img {
